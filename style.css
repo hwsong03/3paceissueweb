@@ -1,0 +1,111 @@
+/* --- Base Styles --- */
+body {
+    background-color: #e5f4e3;
+    font-family: 'Quicksand', sans-serif, 'Arial', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #4e8d7c;
+}
+
+/* --- Navigation Menu --- */
+.menu {
+    background-color: #4e8d7c;
+    padding: 15px 15px 15px 5px;
+    width: 60px;
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 100%;
+    transition: width 0.3s;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.menu:hover {
+    width: 250px;
+}
+
+.navLink {
+    display: block;
+    color: #e5f4e3;
+    padding: 10px;
+    margin: 5px 0;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu:hover .navLink {
+    opacity: 1;
+}
+
+/* --- Headers --- */
+.callOutHeader {
+    background-image: url('tigercage.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 40px;
+    color: #e5f4e3;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    margin-left: 70px;
+}
+
+.noImageHeader {
+    background-color: #2e6659; 
+    padding: 20px;
+    text-align: center;
+    margin-left: 70px;
+    background-image: none; /* Ensuring no image is set */
+}
+
+/* --- Main Content --- */
+.mainContainer {
+    margin-left: 70px;
+    padding: 20px;
+}
+
+.subTitle {
+    padding: 10px 0;
+    margin: 20px 0;
+    border-bottom: 3px solid #4e8d7c;
+    font-weight: bolder;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; 
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.stats {
+    background-color: #d8f1de;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* --- Footer --- */
+.footer {
+    margin-top: 40px;
+    color: #2e6659;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #d8f1de;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    clear: both; 
+}
